@@ -1,0 +1,16 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import './layouts/sections.css';
+
+
+/* TODO: installer SASS */
+
+.black-color{
+  color: #111111;
+}
+
+.white-color{
+  color: #f8d2c9;
+}
