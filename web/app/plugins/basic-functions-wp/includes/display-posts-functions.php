@@ -30,3 +30,19 @@ function be_dps_template_part($output, $original_atts)
     return $output;
 }
 add_action('display_posts_shortcode_output', 'be_dps_template_part', 10, 2);
+
+/** Récupère la première image d'un post
+Source : https://css-tricks.com/snippets/wordpress/get-the-first-image-from-a-post */
+function get_first_image() {
+    global $post, $posts;
+    $first_img = '';
+    ob_start();
+    ob_end_clean();
+    $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+    $first_img = $matches [1] [0];
+
+    if(empty($first_img)){ //Defines a default image
+        $first_img = "/images/default.jpg";
+    }
+    return $first_img;
+}

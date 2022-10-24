@@ -1,3 +1,8 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css"
+/>
+
 <a class="sr-only focus:not-sr-only" href="#main">
   {{ __('Skip to content') }}
 </a>
@@ -6,6 +11,7 @@
 
   <main id="main" class="main">
     @yield('content')
+
   </main>
 
   @hasSection('sidebar')
@@ -16,27 +22,37 @@
 
 @include('sections.footer')
 
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+
 <script>
-//Change navbar when scrolling
+  document.addEventListener( 'DOMContentLoaded', function () {
+    var splideOptions = {
+      direction: 'ltr',
+      height: '600px',
+      arrows: undefined,
+      perPage: 5,
+    }
 
-window.addEventListener('load', scrollFunction);
-window.addEventListener('scroll', scrollFunction);
+    // if(screen.width < 1280) {
+    //   splideOptions.height = '450px';
+    // }
+    //
+    // if(screen.width < 992) {
+    //   splideOptions.height = '350px';
+    // }
 
-function isInViewport(element) {
-  const rect = element.getBoundingClientRect();
-  return (
-    rect.bottom >= 0
-  );
-}
+    // if( 992 > screen.width && screen.width > 576) {
+    //   splideOptions.height = '450px';
+    // }
 
-function scrollFunction() {
+    var splide = new Splide( '.splide', splideOptions );
 
-  const header = document.querySelector('header');
+    splide.mount();
+  } );
 
-  if (isInViewport(header)) {
-    document.getElementById("navbar").style.color = '#f8d2c9';
-  } else {
-    document.getElementById("navbar").style.color = '#111111';
-  }
-}
 </script>
+
+
+
+
+
