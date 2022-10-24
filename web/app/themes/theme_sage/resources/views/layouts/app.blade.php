@@ -28,7 +28,6 @@
   document.addEventListener( 'DOMContentLoaded', function () {
     var splideOptions = {
       direction: 'ltr',
-      height: '600px',
       arrows: undefined,
       perPage: 5,
     }

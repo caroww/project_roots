@@ -1,6 +1,6 @@
 <header class="banner">
 
-  <div class="pr-cover-background" id="background-header" style="background-image: url(@asset('images/nav.jpg'))">
+  <div class="pr-cover-background h-96" id="background-header" style="background-image: url(@asset('images/nav.jpg'))">
     <div class="fixed top-0 left-0 right-0 flex flex-wrap items-center justify-between p-4 md:p-8" id="navbar">
       <a class="brand" href="{{ home_url('/') }}">
         {!! $siteName !!}
