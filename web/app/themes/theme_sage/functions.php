@@ -77,3 +77,10 @@ collect(['setup', 'filters'])
 */
 
 add_theme_support('sage');
+
+/* Add menu sites */
+function add_custom_new_menu()
+{
+    register_nav_menu('secondary_navigation', __('Secondary Navigation'));
+}
+add_action('init', 'add_custom_new_menu');

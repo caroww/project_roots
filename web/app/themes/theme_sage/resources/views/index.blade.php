@@ -2,7 +2,7 @@
 
 @section('content')
 
-  <div class="white-color">
+  <div class="white-color" id="articles">
     <div class="container mx-auto py-20">
       <div class="pb-9">
         <h2>Et adeste extremas serpens viri.</h2>
@@ -12,7 +12,7 @@
   </div>
 
 
-  <div class="pr-cover-background pr-parallax-section" style="background-image: url(@asset('images/parallax.jpg'))">
+  <div class="pr-cover-background pr-parallax-section" id="about" style="background-image: url(@asset('images/parallax.jpg'))">
     <div class="container mx-auto py-24">
 
       <div class="flex flex-row py-2 ">
@@ -49,7 +49,7 @@
     </div>
   </div>
 
-  <div class="white-color">
+  <div class="white-color" id="more">
 
     <div class="container mx-auto py-24 flex items-stretch">
 
@@ -84,7 +84,7 @@
   </div>
 
 
-  <div class="pr-cover-background h-max" style="background-image: url(@asset('images/form.jpg'))">
+  <div class="pr-cover-background h-max" id="contact" style="background-image: url(@asset('images/form.jpg'))">
     <div class="container mx-auto py-24 ">
       <div class="bg-white bg-opacity-50 rounded-md flow-root">
 
