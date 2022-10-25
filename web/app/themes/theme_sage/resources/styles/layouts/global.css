@@ -65,7 +65,7 @@ p{
 
 
 
-/*Parallax css*/
+/** Parallax css*/
 
 body, html {
   height: 100%;
@@ -83,4 +83,10 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+/** Nav menu */
+.menu-item{
+ padding: 0px 20px;
 }

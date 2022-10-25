@@ -1,6 +1,6 @@
 <?php
 
-class Bf_Menu_Controller
+class CdwcmMenuController
 {
     /** Get menu and submenu items
     Original source  : https://stackoverflow.com/questions/72293586/how-do-i-generate-a-custom-menu-wp-get-nav-menu-items-into-fourth-level */
@@ -71,10 +71,6 @@ class Bf_Menu_Controller
             $menu_li .= $open_li . $add_a . $submenu . $close_li;
         }
         $menu_ul_close = '</ul>';
-
-
-
-
 
         return $menu_ul_open . $menu_li . $menu_ul_close;
     }

@@ -1,18 +1,24 @@
-{!! (new Bf_Menu_Controller())->display_menu('primary_navigation') !!}
+<style>
+  .bf-menu li{
+    color: white;
+    padding : 5px 0px;
+  }
 
-<footer class="content-info">
 
-  <div class="secondary-color">
-    <div class="container mx-auto py-20">
-      {{--@php(dynamic_sidebar('sidebar-footer'))--}}
+</style>
 
-    </div>
+<footer class="secondary-background-color">
+
+  <div class="container mx-24 py-20 flex items-stretch" >
+
+      <div class="px-6">
+        {!! do_shortcode('[CdwcmDisplayMenu menu_name="primary_navigation"]')!!}
+      </div>
+      <div class="px-6">
+        {!! do_shortcode('[CdwcmDisplayMenu menu_name="secondary_navigation"]')!!}
+      </div>
+
   </div>
-
-
-
-
-
 
 </footer>
 

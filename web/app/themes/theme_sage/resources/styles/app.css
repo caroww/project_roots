@@ -19,3 +19,16 @@
 .secondary-color{
   color: #332e2e;
 }
+
+.black-background-color{
+  background-color: #111111;
+}
+.white-background-color{
+  background-color: #faf1f0;
+}
+.primary-background-color{
+  background-color: #f83c23;
+}
+.secondary-background-color{
+  background-color: #332e2e;
+}

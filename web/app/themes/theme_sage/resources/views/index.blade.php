@@ -2,7 +2,7 @@
 
 @section('content')
 
-  <div class="white-color" id="articles">
+  <div class="white-background-color" id="articles">
     <div class="container mx-auto py-20">
       <div class="pb-9">
         <h2>Et adeste extremas serpens viri.</h2>
@@ -49,11 +49,11 @@
     </div>
   </div>
 
-  <div class="white-color" id="more">
+  <div class="white-background-color" id="more">
 
     <div class="container mx-auto py-24 flex items-stretch">
 
-      <div class="py-2 ">
+      <div class="py-2">
         <div class="container p-7 bg-white bg-opacity-50 max-w-xl rounded-md">
           <div class="pb-3">
             <video controls>
